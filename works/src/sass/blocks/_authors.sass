@@ -1,0 +1,84 @@
+.authors
+    min-height: 1167px
+    &__cotegory
+        width: 195px
+        height: 40px
+        background: #FF014F
+        border-radius: 30px
+        text-align: center
+        padding-top: 13px
+        font-weight: 600
+        font-size: 24px
+        line-height: 30px
+        color: #FFFFFF
+        cursor: pointer
+        button
+            padding-top: 10px
+            width: 20px
+            height: 11px
+            background: #FF014F
+            border: none
+            background-image: url(../../../icons/bottom.png)
+            cursor: pointer
+    &__card
+        display: grid
+        grid-template-columns: repeat(4, 306px)
+        grid-template-rows: repeat(2, 444px)
+        gap: 30px
+    
+    .authors__cards-images
+        height: 306px
+        width: 306px
+        background: #23252B
+        box-shadow: 4px -4px 10px rgba(80, 80, 80, 0.3)
+        border-radius: 10px
+        img
+            width: 200px
+            height: 200px
+            margin: 16px 0 0 55px
+    &__cards
+        position: relative
+        height: 444px
+        &:before
+            position: absolute
+            height: 20px
+            width: 20px
+            background: url(../../../icons/prev.png) center center/cover no-repeat
+        
+        &-img
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 91px 
+            height: 96px
+            width: 96px
+            border-radius: 48px
+            border: solid 2px
+            border-color: #4d0c13
+    
+        &-title
+            margin-top: 68px
+            text-align: center
+            font-weight: 600
+            font-size: 24px
+            line-height: 30px
+            color: #C4C4C4
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 0px
+                width: 18px
+                height: 18px
+                background: url(../../../icons/Ell.png)
+            &:hover
+                color:#FF014F
+                cursor: pointer   
+        &-subtitle
+            text-align: center
+            font-weight: 600
+            font-size: 20px
+            line-height: 30px
+            color: #FFFFFF   
