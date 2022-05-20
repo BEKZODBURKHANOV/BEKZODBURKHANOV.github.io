@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/libs/animate.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
+</head>
+
+<body>
+    <a class="pageup" href="#main">
+        <img src="src/icons/up.png" alt="pageup">
+    </a>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="mobile__menu">
+        <div class="mobile__menu__close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+
+                <path
+                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                    fill="#b8b8b8" />
+            </svg>
+        </div>
+        <ul class="mobile__menu__list">
+            <li>Главная
+
+            </li>
+            <ul>
+                <li class="mobile__menu__list_aboutUs">О нас</li>
+                <ul class="list__aboutUs">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+            </ul>
+            <li>Услуги</li>
+            <li>Тарифы</li>
+            <li>Практика</li>
+            <li>Контакты</li>
+        </ul>
+
+    </nav>
+    <section id="main" class="main">
+        <header class="main__header">
+            <nav class="main__header_items">
+                <div class="main__logo">
+                    <img src="src/icons/Logo.svg" alt="">
+                </div>
+                <button class="modalbutton">Оставить заявку</button>
+                <ul class="main__items">
+                    <li class="menulistone">Главная</li>
+                    <li class="menulisttwo">О нас
+                        <ul class="visible__menu_about">
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+
+                    </li>
+                    <li class="visible__dropdown menulistthree">Услуги
+                        <ul class="visible__menu">
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </li>
+                    <li class="menulistfour">Тарифы</li>
+                    <li class="menulistfive">Практика</li>
+                    <li class="menulistsix">Контакты</li>
+                </ul>
+
+                <a class="main__phone" href="tel:+74997777777">+7 (499) 777-77-77</a>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="main__box">
+                <div class="main__item">
+                    <h1 class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.3s">
+                        ЮРИДИЧЕСКАЯ КОМПАНИЯ
+                        «КОМПАНИЯ»</h1>
+                    <ul class="main__subtitle">
+                        <li class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.5s"> Мы работаем на Ваш
+                            успех
+                        </li>
+                        <li class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.7s">Решим Ваши проблемы
+                            правовыми методами</li>
+                        <li class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.9s">Многолетнее доверие
+                            клиентов и
+                            бизнес-партнеров</li>
+                    </ul>
+                    <h2>ЗАКОНОМЕРНОЕ ДОВЕРИЕ ПРОФЕССИОНАЛАМ</h2>
+                </div>
+                <div class="main__form">
+                    <h1>
+                        Связаться с вами?
+                    </h1>
+                    <form action="#">
+                        <input class="form__input" required placeholder="Имя" type="text" name="name">
+                        <input class="form__input" required placeholder="Номер" type="tel" name="phone">
+                        <a href="#">
+                            <input required type="checkbox">Согласен на обработку персональных данных.
+                        </a>
+                        <button class="form__input__btn" type="submit">отправить</button>
+                    </form>
+                </div>
+                <div class="main__social">
+                    <a href="#"> <img class="social" src="src/icons/vk.png" alt="vk"></a>
+                    <a href="#"><img class="social" src="src/icons/whatsapp.png" alt="whatsapp"></a>
+                    <a href="#"><img class="social" src="src/icons/telegram.png" alt="telegram"></a>
+                    <a href="#"><img class="social" src="src/icons/ok.png" alt="odnoklasniki"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutus">
+        <div class="container">
+            <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">О НАС</h1>
+            <span class="line"></span>
+            <div class="aboutus__wrapper">
+
+
+                <img class="aboutus__img animate__animated animate__fadeInLeft wow" data-wow-duration="1s"
+                    src="src/img/bussnesteam.jpg" alt="team">
+                <div class="aboutus__descr animate__animated animate__fadeInRight wow" data-wow-duration="1s">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, sed reprehenderit maxime
+                        et quod quam similique recusandae dolorum, id aperiam, exercitationem rerum fugiat. Distinctio
+                        molestiae corporis explicabo itaque aliquid. Molestiae.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste vel explicabo mollitia vero esse,
+                        soluta ratione rerum! Molestias.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum ut non ea sunt minus
+                        voluptates laborum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ut placeat obcaecati error fuga
+                        pariatur corrupti maxime quod.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, culpa facilis officia ad
+                        accusantium dolores dolor aut!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi unde nihil facilis quaerat
+                        placeat earum aspernatur.</p>
+                </div>
+                <div class="aboutus__descr__bottom aboutus__img animate__animated animate__fadeInLeft wow"
+                    data-wow-duration="1.3s">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatum minima, labore
+                        repellendus explicabo
+                    </p>
+                    <p>
+                        repellendus explicabo blanditiis nam. Deserunt tempora labore sequi Fugiat distinctio culpa hic?
+                        Deserunt tempora labore sequi
+                    </p>
+                    <p>
+                        placeat tempore officia nulla, voluptas laboriosam.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="promo">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">СДЕЛКИ С НЕДВИЖИМОСТЬЮ</h1>
+        <span class="line"></span>
+
+        <div class="promo__wrapper">
+            <div class="promo__wrapper__item">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/search.svg" alt="search">
+                    <h3>ПРОВЕРКА ПРИОБРЕТАЕМОЙ КВАРТИРЫ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>ЭКСПЕРТИЗА ИНЫХ ОБЪЕКТОВ ПРИОБРЕТЕНИЯ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>СОПРОВОЖДЕНИЕ СДЕЛОК С НЕДВИЖИМОСТЬЮ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>НЕУСТОЙКА ПО ДДУ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+74997777777">+7 (499) 777-77-77</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+
+    </section>
+
+
+    <!--        <div>        </div>                  -->
+
+
+    <section class="promo">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">СУДЕБНОЕ ПРЕДСТАВИТЕЛЬСТВО</h1>
+        <span class="line underpromo"></span>
+        <h2 class="subtitle">ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ</h2>
+
+        <div class="promo__wrapper courtjpeg">
+            <div class="promo__wrapper__item">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/search.svg" alt="search">
+                    <h3>ВЗЫСКАНИЕ ДЕБИТОРСКОЙ ЗАДОЛЖЕННОСТИ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>СПОРЫ С НАЛОГОВЫМИ ОРГАНАМИ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>СПОРЫ ПО НЕДВИЖИМОСТИ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>НБАНКРОТСТВО ДОЛЖНИКОВ, СУБСИДИАРНАЯ ОТВЕТСТВЕННОСТЬ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>ЗАЩИТА ПРАВ КЛИЕНТА ПРИ БАНКРОТСТВЕ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>КОРПОРАТИВНЫЕ СПОРЫ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>ЗАЩИТА ПРАВ РАБОТОДАТЕЛЯ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+74997777777">+7 (499) 777-77-77</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="promo">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">СУДЕБНОЕ ПРЕДСТАВИТЕЛЬСТВО</h1>
+        <span class="line underpromo"></span>
+        <h2 class="subtitle">ДЛЯ ФИЗИЧЕСКИХ ЛИЦ</h2>
+
+        <div class="promo__wrapper courtjpeg">
+            <div class="promo__wrapper__item">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/search.svg" alt="search">
+                    <h3>ВЗЫСКАНИЕ ДЕНЕЖНЫХ СРЕДСТВ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>СПОРЫ О НАСЛЕДСТВЕ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>СПОРЫ ПО НЕДВИЖИМОСТИ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>ЗАЩИТА ПРАВ ПОТРЕБИТЕЛЕЙ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>БРАКОРАЗВОДНЫЕ СПОРЫ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>АВТОСПОРЫ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>СПОРЫ ПО ПЕНСИЯМ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>БАНКРОТСТВО ФИЗИЧЕСКИХ ЛИЦ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+74997777777">+7 (499) 777-77-77</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="promo">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">БУХГАЛТЕРСКИЕ УСЛУГИ</h1>
+        <span class="line underpromo"></span>
+        <h2 class="subtitle"></h2>
+
+        <div class="promo__wrapper accounting">
+            <div class="promo__wrapper__item last__promo">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/search.svg" alt="search">
+                    <h3>БУХГАЛТЕРСКОЕ СОПРОВОЖДЕНИЕ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>ПОДГОТОВКА И СДАЧА ОТЧЕТНОСТИ ЮЛ/ИП</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>НУЛЕВАЯ ОТЧЕТНОСТЬ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>ВОССТАНОВЛЕНИЕ УЧЕТА</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>ОФОРМЛЕНИЕ ДЕКЛАРАЦИИ 3-НДФЛ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+74997777777">+7 (499) 777-77-77</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="promo">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">ЮРИДИЧЕСКИЕ УСЛУГИ</h1>
+        <span class="line underpromo"></span>
+        <h2 class="subtitle"></h2>
+
+        <div class="promo__wrapper">
+            <div class="promo__wrapper__item last__promo">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/search.svg" alt="search">
+                    <h3>РЕГИСТРАЦИЯ/ИЗМЕНЕНИЯ/ЛИКВИДАЦИЯ КОМПАНИЙ И ИП</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>АБОНЕНТСКОЕ СОПРОВОЖДЕНИЕ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>ПОДГОТОВКА/ЭКСПЕРТИЗА ДОГОВОРОВ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/drawing.svg" alt="drawing">
+                    <h3>ЭКСПЕРТИЗА ПРИОБРЕТАЕМОГО БИЗНЕСА</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>СОПРОВОЖДЕНИЕ ПРОДАЖИ БИЗНЕСА</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>НАСЛЕДСТВЕННОЕ ДЕЛО</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+74997777777">+7 (499) 777-77-77</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+
+    </section>
+
+
+
+    <section class="promo">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">КАДРОВОЕ СОПРОВОЖДЕНИЕ</h1>
+        <span class="line"></span>
+
+        <div class="promo__wrapper">
+            <div class="promo__wrapper__item last__promo">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/search.svg" alt="search">
+                    <h3>ВЕДЕНИЕ/ВОССТАНОВЛЕНИЕ КАДРОВОГО УЧЕТА</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/documents.svg" alt="documents">
+                    <h3>СОКРАЩЕНИЕ/УВОЛЬНЕНИЕ/ВЗЫСКАНИЕ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/contract.svg" alt="contract">
+                    <h3>НОРМАТИВНАЯ БАЗА КОМПАНИИ</h3>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+74997777777">+7 (499) 777-77-77</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="src/libs/jquery.min.js"></script>
+    <script src="src/libs/wow.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
