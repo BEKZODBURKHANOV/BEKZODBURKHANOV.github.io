@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/libs/animate.css">
+    <link rel="stylesheet" href="src/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
+</head>
+
+<body>
+    <a class="pageup" href="#main">
+        <?xml version="1.0" standalone="no"?>
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50.000000pt" height="50.000000pt"
+            viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M2503 3796 c-23 -8 -64 -30 -92 -50 -27 -20 -386 -381 -798 -802
+                 -812 -832 -793 -809 -801 -931 -6 -81 10 -125 63 -171 78 -68 103 -72 518 -72
+                    l366 0 3 -752 3 -753 23 -58 c31 -76 103 -148 179 -179 l58 -23 535 0 535 0
+                    58 23 c76 31 148 103 179 179 l23 58 3 753 3 752 366 0 c317 0 374 2 420 17
+                    63 20 124 68 147 117 25 53 20 140 -12 213 -25 56 -94 130 -775 827 -412 421
+                 -770 781 -795 800 -44 31 -127 67 -155 65 -7 0 -31 -6 -54 -13z" fill="#000000a2" />
+            </g>
+        </svg>
+    </a>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="mobile__menu">
+        <div class="mobile__menu__close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                    fill="#b8b8b8" />
+            </svg>
+        </div>
+        <ul class="mobile__menu__list">
+            <li>Главная</li>
+            <ul>
+                <li class="mobile__menu__list_aboutUs">О нас</li>
+                <ul class="list__aboutUs">
+                    <li class="aboutus__section"><a href="#aboutus">О компания</a></li>
+                    <li>Ключевые сотрудники</li>
+                </ul>
+            </ul>
+            <ul>
+                <li class="mobile__menu__list_services">Услуги</li>
+                <ul class="list__services">
+                    <li>Юридические Услуги</li>
+                    <li>Сертификация продукции и услуг «ПОД КЛЮЧ»</li>
+                </ul>
+            </ul>
+            <li>Тарифы</li>
+            <li>Контакты</li>
+        </ul>
+    </nav>
+
+    <div id="modal" class="modal">
+        <div class="modal__item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                    fill="#b8b8b8" />
+            </svg>
+            <h1>Связаться с вами?</h1>
+            <form action="#">
+                <input class="modal__input" required placeholder="Имя" type="text" name="name">
+                <input class="modal__input" required placeholder="Номер" type="tel" name="phone">
+                <textarea placeholder="Введите текст вашего вопроса" name="message"></textarea>
+                <a href="policy.html">
+                    <input required type="checkbox">Согласен на обработку персональных данных.
+                </a>
+                <button type="submit">отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal__info modal__info__two">
+        <div class="container">
+            <div class="modal__info__close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path
+                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                        fill="#b8b8b8" />
+                </svg>
+            </div>
+            <div class="modal__info__wrapper">
+                <p><strong><a target="_blank" href="https://gosertificat.ru/deklaratiya_sootvetsviya_gost_r">Декларация
+                            соответствия
+                            ГОСТ Р</a></strong> необходима для подтверждения соответствия
+                    выпускаемой/продаваемой продукции нормам, требованиям и стандартам безопасности. При этом на
+                    отдельные виды товаров она выдаётся в обязательном порядке.
+                    Указанную декларацию документацию можно получать как на продукцию отечественного, так и
+                    иностранного производства.</p>
+                <p>По сути декларация соответствия ГОСТ Р представляет собой документ, отражающий данные о
+                    качественных характеристиках и свойствах продукции, обозначенных самим продавцом либо
+                    изготовителем и указанный в декларации параметры требует от производителя их неукоснительного
+                    соблюдения.</p>
+                <p><strong>Документы, необходимые для получения сертификата соответствия ГОСТ Р
+                        Сертификат для образцов продукции:</strong></p>
+                <p>
+                    <ul class="modal__info__list">
+                        <li>1. Свидетельство о регистрации фирмы, постановке на учет в налоговые органы;</li>
+                        <li>2. Контракт на поставку, а также инвойс;</li>
+                        <li>3. Паспорт с теххарактеристиками/инструкция по эксплуатации;</li>
+                        <li>4. Декларация о соответствии от производителя (при наличии);</li>
+                        <li>5. Свидетельство о государственной регистрации (при необходимости).</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__info">
+        <div class="container">
+            <div class="modal__info__close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path
+                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                        fill="#b8b8b8" />
+                </svg>
+            </div>
+            <div class="modal__info__wrapper">
+                <p><strong><a target="_blank"
+                            href="https://gosertificat.ru/deklaracija_pojarnoyi_bezopasnosti">Декларация пожарной
+                            безопасности</a></strong> является официальным документом, который подтверждает
+                    пожарную безопасность товара/объекта в отношении соответствия обязательным требованиям
+                    Федерального закона № 123 от 22.07.2008 г.</p>
+                <p>Согласно указанному Федеральному закону «Технический регламент о требованиях пожарной
+                    безопасности» декларация пожарной безопасности — это форма оценки соответствия, содержащая
+                    информацию о мерах пожарной безопасности, направленных на обеспечение на объекте защитынормативного
+                    значения пожарного риска.
+                    Пожарная декларация на продукцию является обязательным документом, оформляется по
+                    установленной законом форме на листе формата А4, на соответствие требованиям технического
+                    регламента о требованиях пожарной безопасности.</p>
+                <p>Добровольной декларации не бывает, если у вас есть обязательные документы необходимые для
+                    реализации продукции, то вы можете оформить добровольный сертификат пожарной безопасности или
+                    заменить процедуру декларирования на сертификацию.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal__info__two">
+        <div class="container">
+            <div class="modal__info__close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path
+                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                        fill="#b8b8b8" />
+                </svg>
+            </div>
+            <div class="modal__info__wrapper">
+                <p><strong><a target="_blank" href="https://gosertificat.ru/deklaratiya_sootvetsviya_gost_r">Декларация
+                            соответствия ГОСТ Р</a></strong> необходима для подтверждения соответствия
+                    выпускаемой/продаваемой продукции нормам, требованиям и стандартам безопасности. При этом на
+                    отдельные виды товаров она выдаётся в обязательном порядке.
+                    Указанную декларацию документацию можно получать как на продукцию отечественного, так и
+                    иностранного производства.</p>
+                <p>По сути декларация соответствия ГОСТ Р представляет собой документ, отражающий данные о
+                    качественных характеристиках и свойствах продукции, обозначенных самим продавцом либо
+                    изготовителем и указанный в декларации параметры требует от производителя их неукоснительного
+                    соблюдения.</p>
+                <p><strong>Документы, необходимые для получения сертификата соответствия ГОСТ Р
+                        Сертификат для образцов продукции:</strong></p>
+                <p>
+                    <ul class="modal__info__list">
+                        <li>1. Свидетельство о регистрации фирмы, постановке на учет в налоговые органы;</li>
+                        <li>2. Контракт на поставку, а также инвойс;</li>
+                        <li>3. Паспорт с теххарактеристиками/инструкция по эксплуатации;</li>
+                        <li>4. Декларация о соответствии от производителя (при наличии);</li>
+                        <li>5. Свидетельство о государственной регистрации (при необходимости).</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="main" class="main">
+        <header class="main__header">
+            <nav class="main__header_items">
+                <div class="main__logo">
+                    <a href="#main"><img src="src/icons/Logo.svg" alt=""></a>
+                </div>
+                <button class="modalbutton">Оставить заявку</button>
+                <ul class="main__items">
+                    <li class="menulistone">Главная</li>
+                    <li class="menulisttwo">О нас
+                        <ul class="visible__menu_about">
+                            <li class="aboutus__section">О компания</li>
+                            <li class="princourwrk__section">Принципы Нашей Работы</li>
+                        </ul>
+                    </li>
+                    <li class="visible__dropdown menulistthree">Услуги
+                        <ul class="visible__menu">
+                            <li class="promo__section">Юридические Услуги</li>
+                            <li class="promo__certificate__section">Сертификация продукции и услуг «ПОД КЛЮЧ»</li>
+                        </ul>
+                    </li>
+                    <li class="menulistfour">Тарифы</li>
+                    <li class="menulistsix">Контакты</li>
+                </ul>
+                <a class="main__phone" href="tel:+79637794244">+7 (963) 779-42-44</a>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="main__box">
+                <div class="main__item">
+                    <h1 class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.3s">
+                        ООО «ЭКОР» - это надежный партнер,
+                        грамотный и ответственный исполнитель.</h1>
+                    <ul class="main__subtitle">
+                        <li class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.5s"> Мы работаем на
+                            Ваш
+                            успех
+                        </li>
+                        <li class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.7s">Решим Ваши
+                            проблемы
+                            правовыми методами</li>
+                        <li class="animate__animated animate__fadeInLeft wow" data-wow-delay="0.9s">Многолетнее
+                            доверие
+                            клиентов и
+                            бизнес-партнеров</li>
+                    </ul>
+
+                    <h2>ЗАКОНОМЕРНОЕ ДОВЕРИЕ ПРОФЕССИОНАЛАМ</h2>
+                </div>
+
+                <div class="main__form">
+                    <h1>
+                        Связаться с вами?
+                    </h1>
+                    <form action="#">
+                        <input class="form__input" required placeholder="Имя" type="text" name="name">
+                        <input class="form__input" required placeholder="Номер" type="tel" name="phone">
+                        <textarea class="form__input form__textarea" placeholder="Введите текст вашего вопроса"
+                            name="message"></textarea>
+                        <div class="main__input__btn">
+                            <button type="submit">отправить</button>
+                            <a href="policy.html">Отправляя свои данные, вы соглашаетесь
+                                с условиями пользовательского соглашения
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="main__social">
+                    <a href="#"><img class="social" src="src/icons/vk.png" alt="vk"></a>
+                    <a href="#"><img class="social" src="src/icons/whatsapp.png" alt="whatsapp"></a>
+                    <a href="#"><img class="social" src="src/icons/telegram.png" alt="telegram"></a>
+                    <a href="#"><img class="social" src="src/icons/ok.png" alt="odnoklasniki"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="aboutus" class="aboutus">
+        <div class="container">
+            <div class="aboutus__wrapper">
+                <div class="aboutus__descr animate__animated animate__fadeInLeft wow" data-wow-duration="1s">
+                    <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">О НАС</h1>
+                    <span class="line"></span>
+                    <p>Общество с ограниченной ответственностью «ЭКОР» <strong>специализируется</strong> на вопросах
+                        сопровождения бизнеса <strong>по правовому обслуживанию</strong> юридических лиц, индивидуальных
+                        предпринимателей и физических лиц, а также <strong>оказывает услуги по сертификации продукции и
+                            услуг (декларирование).</strong></p>
+                    <p>За время нашей успешной работы мы убедились,
+                        что юридическое обслуживание для наших клиентов - самый эффективный и оптимальный вариант
+                        поддержки при ведении бизнеса.</p>
+                    <p>ООО «ЭКОР» в рамках абонентского
+                        сопровождения оказывают услуги по сертификации продукции и услуг; по составлению и экспертизе
+                        различных договоров; по ведению претензионной работы; по сопровождению и регистрации сделок; по
+                        разработке локальных актов; по оформлению и сопровождению регистрационный действий для бизнеса;
+                        по проверке контрагентов, а также по ряду других вопросов, ответы на которые необходимы именно
+                        Вам.</p>
+                    <p>Цель нашей работы - решение Ваших проблем! И
+                        для достижения этой цели мы используем</p>
+                    <p>современные технологии, глубокие знания и
+                        большой опыт</p>
+                </div>
+                <img class="aboutus__img animate__animated animate__fadeInRight  wow" data-wow-duration="1s"
+                    src="src/img/certificate.jpg" alt="team">
+                <div class="aboutus__descr__bottom aboutus__img animate__animated animate__fadeInLeft wow"
+                    data-wow-duration="1.3s">
+                    <h1 class="title">НАШИ ПРЕИМУЩЕСТВА
+                    </h1>
+                    <span class="line"></span>
+                    <p>
+                        За время работы наша команда специалистов (экспертов) накопила огромный опыт, в том числе в
+                        сфере сертификации, юридического обслуживания, что дает нам значительное преимущество перед
+                        другими компаниями. Мы ценим время наших клиентов и гарантируем:
+                        <ul>
+                            <li> <strong>оперативную помощь.</strong> Клиент всегда может связаться с юристами ООО
+                                «ЭКОР» и быстро получить устную консультацию по интересующему вопросу;</li>
+                            <li> <strong>оказание только нужных
+                                    клиенту услуг.</strong> Наши клиенты выбирают необходимый набор услуг и не
+                                оплачиваете ту работу, которая вам не нужна; состав услуг всегда может быть изменен
+                                исходя из ваших потребностей;</li>
+                            <li> <strong>индивидуальный подход к
+                                    решению каждой задачи.</strong> При решении любых вопросов клиента мы учитываем все
+                                нюансы ситуации и находим такое решение, которое подойдет именно для клиента;</li>
+                            <li> <strong>качество и своевременность
+                                    исполнения взятых на себя обязательств.</strong> Мы любим свою работу и всегда
+                                выполняем ее качественно и в согласованные сроки;</li>
+                            <li> <strong>ответственность за результат,
+                                    закрепленная договором.</strong> С клиентом всегда заключается договор на
+                                юридические услуги, в котором четко закреплена ответственность за взятые на себя
+                                обязательства; - гибкую и прозрачную ценовую политику. Для клиента мы подберем
+                                подходящий тарифный план, цена которого не изменится, если не будет изменен состав
+                                выбранных услуг.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="promo">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">ЮРИДИЧЕСКИЕ УСЛУГИ</h1>
+        <span class="line"></span>
+        <h2 class="subtitle">ДЛЯ БИЗНЕСА И ФИЗИЧЕСКИХ ЛИЦ</h2>
+        <div class="promo__wrapper courtjpeg">
+            <div class="promo__wrapper__item">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/low.svg" alt="search">
+                    <h3>СУДЕБНЫЕ СПОРЫ ПО РАЗЛИЧНЫМ ВОПРОСАМ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/checklist.svg" alt="documents">
+                    <h3>РЕГИСТРАЦИЯ ФИРМ И ИЗМЕНЕНИЙ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/adding.svg" alt="contract">
+                    <h3>ДОБАВЛЕНИЕ ВИДА ДЕЯТЕЛЬНОСТИ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/contract3.svg" alt="drawing">
+                    <h3>СОСТАВЛЕНИЕ ДОГОВОРОВ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/contract.svg" alt="documents">
+                    <h3>СДЕЛКИ С НЕДВИЖИМОСТЬЮ</h3>
+                    <span>Подробнее</span>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+79637794244">+7 (963) 779-42-44</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+    </section>
+
+
+    <section class="promo promo__certificate">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">Сертификация продукции и услуг
+            «ПОД КЛЮЧ»</h1>
+        <span class="line underpromo"></span>
+        <div class="promo__wrapper certification">
+            <div class="promo__wrapper__item">
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.2s">
+                    <img src="src/icons/sert1.svg" alt="search">
+                    <h3>ОБЯЗАТЕЛЬНАЯ СЕРТИФИКАЦИЯ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/certificate.svg" alt="drawing">
+                    <h3>СЕРТИФИКАЦИЯ ГОСТ Р</h3>
+                    <span class="certificate__two">Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/fire.svg" alt="documents">
+                    <h3>СЕРТИФИКАЦИЯ ПОЖАРНОЙ БЕЗОПАСНОСТИ</h3>
+                    <span class="certificate__three">Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/s2.svg" alt="contract">
+                    <h3>СЕРТИФИКАЦИЯ ISO</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/contract1.svg" alt="drawing">
+                    <h3>СЕРТИФИКАЦИЯ УСЛУГ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.4s">
+                    <img src="src/icons/licensing.svg" alt="documents">
+                    <h3>ДОБРОВОЛЬНЫЙ СЕРТИФИКАТ СООТВЕТСТВИЯ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.6s">
+                    <img src="src/icons/decloration.svg" alt="contract">
+                    <h3>ДЕКЛАРАЦИЯ О СООТВЕТСТВИИ</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/dec.svg" alt="drawing">
+                    <h3>ДЕКЛАРИРОВАНИЕ ПО ТР ТС</h3>
+                    <span>Подробнее</span>
+                </div>
+                <div class="promo__wrapper__items animate__animated animate__zoomIn wow" data-wow-duration="1.8s">
+                    <img src="src/icons/declar.svg" alt="drawing">
+                    <h3>ДЕКЛАРИРОВАНИЕ ГОСТ Р</h3>
+                    <span>Подробнее</span>
+                </div>
+            </div>
+        </div>
+        <div class="promo__widget">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM351.6 321.5l-11.62 50.39c-1.633 7.125-7.9 12.11-15.24 12.11c-126.1 0-228.7-102.6-228.7-228.8c0-7.328 4.984-13.59 12.11-15.22l50.38-11.63c7.344-1.703 14.88 2.109 17.93 9.062l23.27 54.28c2.719 6.391 .8828 13.83-4.492 18.22L168.3 232c16.99 34.61 45.14 62.75 79.77 79.75l22.02-26.91c4.344-5.391 11.85-7.25 18.24-4.484l54.24 23.25C349.5 306.6 353.3 314.2 351.6 321.5z"
+                    fill="#fff" />
+            </svg>
+            <a class="main__phone promo__phone" href="tel:+79637794244">+7 (963) 779-42-44</a>
+            <button class="promo__widget__btn">Получить консультацию</button>
+        </div>
+    </section>
+
+
+    <section class="princourwrk">
+        <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">ПРИНЦИПЫ НАШЕЙ РАБОТЫ: </h1>
+        <span class="line underpromo"></span>
+        <div class="princourwrk__wrapper">
+            <div class="princourwrk__item animate__animated animate__fadeInLeft wow">
+                <h1>ПРОФЕССИОНАЛИЗМ</h1>
+                <span></span>
+            </div>
+            <div class="princourwrk__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                <h1>КОМПЛЕКСНЫЙ АНАЛИЗ СИТУАЦИИ</h1>
+                <span></span>
+            </div>
+            <div class="princourwrk__item animate__animated animate__fadeInRight wow">
+                <h1>КОМАНДНАЯ ЗАЩИТА</h1>
+                <span></span>
+            </div>
+            <div class="princourwrk__item animate__animated animate__fadeInLeft wow">
+                <h1>ДОБРОСОВЕСТНОСТЬ</h1>
+                <span></span>
+            </div>
+            <div class="princourwrk__item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                <h1>НАДЕЖНОСТЬ И ОПЕРАТИВНОСТЬ</h1>
+                <span></span>
+            </div>
+            <div class="princourwrk__item animate__animated animate__fadeInRight wow">
+                <h1>ПОЛОЖИТЕЛЬНЫЙ РЕЗУЛЬТАТ</h1>
+                <span></span>
+            </div>
+    </section>
+
+
+    <div class="statistics animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+        <div class="statistics__item">
+            <div class="statistics__items">
+                <?xml version="1.0" standalone="no"?>
+                <!DOCTYPE svg
+                    PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35.000000pt" height="35.000000pt"
+                    viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                        stroke="none">
+                        <path d="M2370 5113 c-371 -35 -653 -114 -961 -269 -406 -203 -782 -548 -1029
+                            -944 -179 -286 -309 -655 -362 -1025 -17 -118 -17 -512 0 -630 42 -295 120
+                            -553 242 -800 137 -280 272 -468 494 -691 221 -220 412 -357 681 -489 188 -92
+                            309 -137 500 -185 500 -126 1002 -102 1490 71 150 53 408 183 540 271 560 374
+                            952 942 1095 1588 33 150 50 291 57 465 15 426 -73 832 -263 1214 -124 250
+                            -263 447 -458 648 -214 222 -430 379 -711 518 -296 146 -572 225 -900 255
+                            -102 9 -333 11 -415 3z m545 -342 c628 -106 1158 -448 1511 -977 179 -267 296
+                            -573 351 -909 24 -153 24 -497 0 -650 -108 -668 -474 -1222 -1042 -1580 -243
+                            -153 -537 -261 -850 -312 -154 -24 -497 -24 -650 1 -657 107 -1198 456 -1557
+                            1006 -168 257 -281 557 -335 885 -24 153 -24 497 0 650 81 497 291 912 636
+                            1255 382 381 862 605 1401 654 108 10 418 -4 535 -23z" />
+                        <path d="M2400 3327 l0 -832 503 -503 502 -502 113 113 112 112 -455 455 -455
+                            455 0 767 0 768 -160 0 -160 0 0 -833z" />
+                    </g>
+                </svg>
+                <h1>100</h1>
+                <span>лет успешной работы</span>
+            </div>
+            <div class="statistics__items">
+                <?xml version="1.0" standalone="no"?>
+                <!DOCTYPE svg
+                    PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35.000000pt" height="35.000000pt"
+                    viewBox="0 0 35.000000 35.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,35.000000) scale(0.006836,-0.006836)" fill="#000000" stroke="none">
+                        <path d="M3949 5101 c-30 -10 -78 -30 -105 -45 -37 -20 -485 -462 -1696 -1674
+                    l-1646 -1647 -251 -762 c-271 -822 -273 -828 -228 -894 35 -52 82 -79 139 -79
+                    38 0 231 60 811 251 l762 251 1375 1374 1375 1374 42 -42 c155 -161 182 -413
+                    64 -597 -58 -90 -128 -142 -476 -355 -545 -334 -581 -357 -659 -426 -230 -201
+                    -365 -463 -398 -771 -11 -104 -11 -107 13 -155 28 -56 60 -82 118 -95 55 -12
+                    111 3 155 41 43 38 52 63 66 180 24 200 95 345 240 490 91 91 112 105 480 329
+                    611 373 642 395 739 540 221 326 194 744 -68 1046 l-61 70 149 150 c194 196
+                    231 268 231 450 0 104 -17 173 -63 255 -37 67 -583 622 -666 677 -89 59 -170
+                    83 -286 82 -68 0 -118 -6 -156 -18z m229 -350 c45 -24 553 -533 576 -578 20
+                    -40 21 -105 2 -141 -8 -15 -109 -121 -225 -237 l-211 -210 -367 368 -368 367
+                    205 206 c113 113 219 215 235 225 39 24 105 24 153 0z m-1298 -2606 l-1270
+                    -1270 -367 368 -368 367 1270 1270 1270 1270 367 -367 368 -368 -1270 -1270z
+                    m-1508 -1386 c-4 -4 -194 -69 -422 -144 -493 -163 -502 -166 -497 -157 3 4 68
+                    202 146 440 78 239 147 445 152 460 10 25 18 18 319 -283 170 -170 306 -312
+                    302 -316z" />
+                    </g>
+                </svg>
+                <h1>100</h1>
+                <span>консультаций ежемесячно</span>
+            </div>
+            <div class="statistics__items">
+                <img src="src/icons/persons.png" alt="persons">
+                <h1>100</h1>
+                <span>успешных дел за период работы</span>
+            </div>
+            <div class="statistics__items">
+                <img src="src/icons/like.png" alt="like">
+                <h1>100</h1>
+                <span>довольных клиентов</span>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">Наши главные партнёры</h1>
+    <span class="line"></span>
+
+    <section class="partners">
+        <div class="partners__items">
+            <h2>Роспотребнадзор</h2>
+            <img src="src/icons/rpnz.png" alt="Rospotrebnadzor">
+        </div>
+        <div class="partners__items">
+            <h2>ООО «Клиника семейного здоровья»</h2>
+            <img src="#" alt="">
+        </div>
+        <div class="partners__items">
+            <h2>ООО «Ипэиг»</h2>
+            <img src="#" alt="">
+        </div>
+    </section>
+
+    <h1 class="title animate__animated animate__zoomIn wow" data-wow-duration="1s">Отзывы клиентов</h1>
+    <span class="line"></span>
+
+    <section class="feedback">
+        <div class="swiper feedback__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at vero dolor rerum saepe
+                            accusantium repellendus in doloribus omnis voluptate! Illum voluptas aperiam dicta commodi
+                            consequuntur deleniti vitae qui dolorum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, explicabo sequi unde
+                            asperiores sint aliquam, aspernatur voluptas fuga nam voluptatum hic temporibus minima
+                            ducimus. Perferendis obcaecati nisi consequatur dicta at!</p>
+
+
+                    </div>
+                    <div class="feedback__name">
+                        <span>Ф.И.О</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact__items">
+            <div class="contact__phone">
+                <img src="src/icons/phone-icon.svg" alt="">
+                <a href="tel:+79637794244">+7 (963) 779-42-44</a>
+            </div>
+            <address class="contact__address">
+                <img src="src/icons/address.svg" alt="">
+                <span>117623, Москва Город, улица 2-я Мелитопольская, дом 21, корпус 3</span>
+
+            </address>
+            <div class="contact__mail">
+                <img src="src/icons/email.svg" alt="">
+                <a href="mailto:ecor.info@bk.ru">ecor.info@bk.ru</a>
+
+            </div>
+            <button class="promo__widget__btn contact__btn">Получить консультацию</button>
+        </div>
+    </footer>
+
+
+    <script src="src/libs/jquery.min.js"></script>
+    <script src="src/libs/wow.min.js"></script>
+    <script src="src/libs/swiper-bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
